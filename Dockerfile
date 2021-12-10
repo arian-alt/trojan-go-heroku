@@ -12,7 +12,7 @@ WORKDIR /
 COPY --from=builder /trojan-go/build /usr/local/bin/
 
 EXPOSE 3000
-
+EXPOSE 443
 ADD trojan.sh /trojan.sh
 RUN chmod +x /trojan.sh
 CMD /trojan.sh
