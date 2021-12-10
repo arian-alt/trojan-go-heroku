@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # config trojan
-FILEPATH="/folder1/folder2/myfile.txt"
+FILEPATH="/etc/trojan-go/config.json"
 if [ ! -f "$FILEPATH" ]; then
     mkdir -p "$FILEPATH"
     rm -r "$FILEPATH"
