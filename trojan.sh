@@ -10,7 +10,7 @@ cat << EOF > /etc/trojan-go/config.json
 {
     "run_type": "server",
     "local_addr": "0.0.0.0",
-    "local_port": 443,
+    "local_port": $PORT,
     "remote_addr": "google.com",
     "remote_port": 80,
     "password": [
